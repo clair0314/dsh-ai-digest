@@ -1,5 +1,7 @@
 # dsh-ai-digest
 
+[![ci](https://github.com/clair0314/dsh-ai-digest/actions/workflows/ci.yml/badge.svg)](https://github.com/clair0314/dsh-ai-digest/actions/workflows/ci.yml)
+
 > 每天扫一遍 B站的 AI 内容，挑出**真正值得看的**，写成日报，推到飞书。
 
 不是资讯聚合器。判据只有一条：**这条内容看完，你能拿走什么？**

@@ -43,7 +43,8 @@
     "node": ">=22"
   },
   "scripts": {
-    "check": "node --check index.js && node --check lib/hostdeps.mjs && python3 -m py_compile scripts/*.py"
+    "check": "node --check index.js && node --check lib/hostdeps.mjs && python3 -m py_compile scripts/*.py",
+    "ship": "npm version patch -m 'chore: release v%s' && git push --follow-tags"
   },
   "dsh": {
     "bundle": {
