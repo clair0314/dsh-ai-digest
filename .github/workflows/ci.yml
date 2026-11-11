@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --check index.js
+      - run: node --check lib/hostdeps.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m py_compile scripts/*.py
+      - name: 校验 bundle manifest
+        run: |
+          node -e "const p=require('./package.json'); if(!p.dsh?.bundle?.patch) { console.error('package.json 缺少 dsh.bundle.patch'); process.exit(1) }"
+          test -f cordis.patch.yml || (echo "cordis.patch.yml 不存在" && exit 1)
+          test -f charter.md || (echo "charter.md 不存在" && exit 1)

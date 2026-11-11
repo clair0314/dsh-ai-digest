@@ -1,0 +1,53 @@
+{
+  "name": "dsh-ai-digest",
+  "version": "0.1.0",
+  "description": "DSH 插件：每天扫一遍 B站的 AI 内容，挑出真正值得看的，写成日报推到飞书。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "scripts",
+    "charter.md",
+    "profile.md",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bilibili",
+    "digest",
+    "daily-report",
+    "feishu",
+    "ai-news",
+    "chinese"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/dsh-ai-digest.git"
+  },
+  "homepage": "https://github.com/OWNER/dsh-ai-digest#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-ai-digest/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.1.7-rc.1",
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check lib/hostdeps.mjs && python3 -m py_compile scripts/*.py"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
