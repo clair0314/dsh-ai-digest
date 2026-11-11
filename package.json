@@ -31,11 +31,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/dsh-ai-digest.git"
+    "url": "git+https://github.com/clair0314/dsh-ai-digest.git"
   },
-  "homepage": "https://github.com/OWNER/dsh-ai-digest#readme",
+  "homepage": "https://github.com/clair0314/dsh-ai-digest#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-ai-digest/issues"
+    "url": "https://github.com/clair0314/dsh-ai-digest/issues"
   },
   "license": "MIT",
   "engines": {
