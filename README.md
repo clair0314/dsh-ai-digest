@@ -1,6 +1,6 @@
 # dsh-ai-digest
 
-> 🐧 **AI 学习群：1132348296**（在 QQ 里搜群号就能加）— 每天挑什么看、怎么判断内容值不值得看，群里一起选。
+> 🐧 **AI 学习群 1132348296** · niko 在这儿，插件我写、方向我找、坑我踩。 每天挑什么看、怎么判断内容值不值得看，群里一起选。
 
 ![AI 日报演示：扫一遍 B 站，挑出值得看的](docs/demo.gif)
 
@@ -12,7 +12,7 @@
 
 ---
 
-[![ci](https://github.com/clair0314/dsh-ai-digest/actions/workflows/ci.yml/badge.svg)](https://github.com/clair0314/dsh-ai-digest/actions/workflows/ci.yml)
+[![ci](https://github.com/nekonya77/dsh-ai-digest/actions/workflows/ci.yml/badge.svg)](https://github.com/nekonya77/dsh-ai-digest/actions/workflows/ci.yml)
 
 > 每天扫一遍 B站的 AI 内容，挑出**真正值得看的**，写成日报，推到飞书。
 
